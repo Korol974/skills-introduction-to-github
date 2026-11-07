@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>To-Do List</h1>
+
+      <section class="motivation" aria-live="polite">
+        <h2>Daily Motivation</h2>
+        <p id="motivation-message"></p>
+      </section>
+
+      <div class="input-row">
+        <label for="task-input" class="sr-only">Task</label>
+        <input id="task-input" type="text" placeholder="Type a task..." />
+        <button id="add-task" type="button">Add Task</button>
+      </div>
+
+      <ul id="task-list" aria-label="Task list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
